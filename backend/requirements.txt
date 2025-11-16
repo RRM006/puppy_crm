@@ -1,0 +1,28 @@
+Django==4.2.11
+djangorestframework==3.14.0
+psycopg[binary]==3.2.12
+django-cors-headers==4.3.1
+python-decouple==3.8
+djangorestframework-simplejwt==5.3.1
+dj-rest-auth==5.0.2
+django-allauth==0.57.0
+drf-yasg==1.21.7
+google-auth==2.25.2
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+# Pillow==11.0.0  # Will be added when Python 3.12/3.13 is used or when Pillow releases Python 3.14 wheel
+celery==5.3.4
+redis==5.0.1
+django-celery-beat==2.5.0
+google-api-python-client==2.108.0
+imapclient==2.3.1
+email-validator==2.1.0
+beautifulsoup4==4.12.2
+html2text==2020.1.16
+premailer==3.10.0
+openai==1.3.0
+cryptography==42.0.5
+<<<<<<< HEAD
+twilio==8.10.0
+=======
+>>>>>>> 517ed252086bbf69d280f680af46e67f68419d5c

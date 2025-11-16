@@ -1,0 +1,12 @@
+.threadWrapper { display:flex; flex-direction:column; gap:12px; overflow-y:auto; }
+.header { display:flex; justify-content:space-between; align-items:center; }
+.title { margin:0; font-size:16px; font-weight:600; }
+.replyBtn { background:#4c6fff; color:#fff; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:14px; font-weight:500; }
+.replyBtn:hover { background:#3b56cc; }
+.emailCard { border:1px solid #e2e8f0; border-radius:8px; padding:12px; background:#fff; }
+.emailHead { display:flex; justify-content:space-between; margin-bottom:6px; }
+.from { font-weight:600; font-size:13px; }
+.stamp { font-size:12px; color:#64748b; }
+.attachments { margin-top:8px; display:flex; flex-wrap:wrap; gap:6px; }
+.attachmentLink { font-size:12px; background:#f1f5f9; padding:4px 8px; border-radius:6px; text-decoration:none; color:#0f172a; }
+.attachmentLink:hover { background:#e2e8f0; }

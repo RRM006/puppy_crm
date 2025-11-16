@@ -1,0 +1,96 @@
+/* Layout */
+.inboxGrid {
+  display: grid;
+  grid-template-columns: 240px 1fr 380px;
+  gap: 16px;
+  height: calc(100vh - 120px);
+}
+
+@media (max-width: 1200px) {
+  .inboxGrid {
+    grid-template-columns: 220px 1fr 340px;
+  }
+}
+
+@media (max-width: 900px) {
+  .inboxGrid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .threadPanel { display: none; }
+  .sidebar { display: none; }
+}
+
+/* Sidebar */
+.sidebar {
+  background: #0f172a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.composeBtn {
+  background: #4c6fff;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 16px;
+  transition: background .15s ease;
+}
+.composeBtn:hover { background: #3b56cc; }
+.sectionLabel { font-size: 12px; opacity: .7; margin-bottom: 6px; }
+.sidebarList { display: grid; gap: 4px; margin-bottom: 16px; }
+.sidebarBtn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  text-align: left;
+  padding: 6px 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 6px;
+  transition: background .12s ease;
+}
+.sidebarBtnActive { font-weight: 600; background: #1e293b; }
+.accountBtn { background: transparent; color: #fff; border: none; text-align: left; padding: 6px 8px; cursor: pointer; border-radius: 6px; }
+.accountBtnActive { background: #1e293b; }
+.connectBtn { background: transparent; color:#93c5fd; border:1px dashed #334155; padding:6px 8px; cursor:pointer; border-radius:6px; margin-top:8px; font-size:13px; }
+.connectBtn:hover { background:#1e293b; }
+
+/* List Panel */
+.listPanel { background:#fff; border-radius:12px; padding:12px; display:flex; flex-direction:column; overflow:hidden; }
+.searchRow { display:flex; gap:8px; margin-bottom:12px; }
+.searchInput { flex:1; padding:8px 10px; border:1px solid #e2e8f0; border-radius:8px; font-size:14px; }
+.searchBtn { padding:8px 14px; border:1px solid #e2e8f0; background:#f8fafc; border-radius:8px; cursor:pointer; font-size:14px; }
+.bulkBar { display:flex; gap:8px; padding:6px 8px; background:#f1f5f9; border-radius:8px; margin-bottom:8px; align-items:center; }
+.bulkBtn { border:none; background:transparent; cursor:pointer; font-size:12px; color:#0f172a; }
+.bulkDelete { color:#dc2626; }
+.threadsScroll { overflow-y:auto; }
+.threadItem { display:grid; grid-template-columns:24px 24px 1fr 80px; gap:8px; padding:8px 6px; border-bottom:1px solid #f1f5f9; cursor:pointer; transition: background .1s ease; }
+.threadItem:hover { background:#f8fafc; }
+.threadItemActive { background:#f1f5f9; }
+.starBtn { border:none; background:transparent; font-size:16px; cursor:pointer; }
+.starOn { color:#f59e0b; }
+.starOff { color:#cbd5e1; }
+.threadMeta { display:flex; flex-direction:column; }
+.threadMetaTop { display:flex; gap:6px; align-items:center; }
+.sender { font-weight:500; font-size:13px; }
+.senderUnread { font-weight:700; }
+.categoryBadge { font-size:11px; background:#e2e8f0; padding:2px 6px; border-radius:6px; text-transform:capitalize; }
+.attachIcon { font-size:12px; }
+.preview { font-size:12px; color:#64748b; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.timestamp { text-align:right; font-size:12px; color:#64748b; }
+
+/* Thread Panel */
+.threadPanel { background:#fff; border-radius:12px; padding:12px; display:flex; flex-direction:column; }
+.threadEmpty { padding:12px; color:#64748b; }
+
+/* Utility */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background:#e2e8f0; border-radius:6px; }

@@ -1,0 +1,35 @@
+/* Customer Dashboard Styles */
+
+@media (max-width: 768px) {
+  .customer-dashboard-sidebar {
+    width: 60px !important;
+  }
+  
+  .customer-dashboard-sidebar .menu-label {
+    display: none;
+  }
+  
+  .customer-dashboard-content {
+    margin-left: 60px !important;
+  }
+  
+  .customer-dashboard-topbar {
+    left: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .quick-actions-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Animation for skeleton loading */
+@keyframes shine {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}

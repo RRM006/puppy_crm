@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+venv/
+.env.*
+
+# Django stuff:
+*.log
+staticfiles/
+media/
+
+# Migrations
+**/migrations/**
+!**/migrations/__init__.py
+
+# IDE/editor
+.vscode/
+.idea/
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dylib
+*.dll
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Type checking
+.mypy_cache/
+
+# Node (if frontend later)
+node_modules/

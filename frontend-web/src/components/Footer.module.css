@@ -1,0 +1,11 @@
+.wrap { max-width: 1200px; margin: 0 auto; padding: 30px 20px; display:grid; gap:16px; }
+.top { display:flex; flex-direction:column; gap:12px; align-items:flex-start; justify-content:space-between; }
+.brand { font-weight:800; color: #fff; }
+.links { display:flex; gap:14px; flex-wrap:wrap; }
+.link { color:#e5e7eb; text-decoration:none; }
+.link:hover { color: #fff; }
+.social { display:flex; gap:10px; }
+.social a { color: #e5e7eb; }
+.social a:hover { color: #fff; }
+.bottom { color:#cbd5e1; font-size:12px; }
+@media (min-width: 900px) { .top { flex-direction:row; align-items:center; } }

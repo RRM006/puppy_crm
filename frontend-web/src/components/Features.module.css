@@ -1,0 +1,23 @@
+.wrap { max-width: 1200px; margin: 0 auto; padding: 24px 20px 12px; }
+.title { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 18px; }
+.card { 
+  border: 1px solid rgba(229, 231, 235, 0.5); 
+  border-radius: 16px; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform .3s ease, box-shadow .3s ease; 
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+.card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12); 
+  border-color: rgba(59, 130, 246, 0.3);
+}
+.cardTitle { font-weight: 700; margin-bottom: 6px; display:flex; align-items:center; gap:12px; }
+.icon { display:inline-flex; width:40px; height:40px; align-items:center; justify-content:center; border-radius:50%; background: rgba(59,130,246,0.12); color: var(--primary-600); }
+.desc { color: var(--muted); }
+@media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .grid { grid-template-columns: repeat(3, 1fr); } }

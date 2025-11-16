@@ -1,0 +1,131 @@
+:root {
+  --primary: #3B82F6;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  z-index: 50;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImg {
+  width: 32px;
+  height: 32px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.statusOk { background: #10b981; }
+.statusError { background: #ef4444; }
+.statusChecking { background: #f59e0b; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.links {
+  display: none;
+  gap: 20px;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.link:hover { color: var(--primary-600); }
+
+.actions {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary { background: linear-gradient(135deg, var(--primary), var(--primary-600)); border-color: var(--primary-600); color: #fff; }
+
+.menuBtn {
+  display: inline-flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fff;
+}
+
+.mobile {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  display: none;
+  flex-direction: column;
+  padding: 12px 16px;
+  gap: 8px;
+}
+
+@media (min-width: 900px) {
+  .links { display: flex; }
+  .actions { display: flex; }
+  .menuBtn { display: none; }
+}
+
+.spacer { height: 68px; }
